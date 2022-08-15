@@ -11,7 +11,9 @@
 
             {% for field in form %}
             <div>
-                <p>{{ field.label }}: <br> {{ field }}</p>
+                <p>{{ field.label }}: <span class="form-field">
+                        {{ field }}
+                    </span></p>
 
                 {% for error in field.errors %}
                 <small style="color: red">{{ error }}</small>
